@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ml20_volunteers — Зоо-волонтёрский проект</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Школьный зоо-волонтёрский проект Ml20_volunteers — присоединяйся, помогай животным и делай мир добрее."
+  />
+  <!-- Современный дружелюбный шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Декоративные плавающие лапки -->
+  <div class="floating-paws" aria-hidden="true">
+    <span class="paw paw-1">🐾</span>
+    <span class="paw paw-2">🐾</span>
+    <span class="paw paw-3">🐾</span>
+    <span class="paw paw-4">🐾</span>
+    <span class="paw paw-5">🐾</span>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Лого-плашка проекта -->
+        <span class="logo-mark">Ml20</span>
+        <span class="logo-text">volunteers</span>
+      </div>
+      <nav class="nav">
+        <a href="#about" class="nav-link">О проекте</a>
+        <a href="#activities" class="nav-link">Что мы делаем</a>
+        <a href="#contacts" class="nav-link nav-cta">Стать волонтёром</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO-БЛОК -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-tag">Школьный зоо‑волонтёрский проект</p>
+          <h1 class="hero-title">
+            Ml20_volunteers — команда, <span>которая помогает животным</span>
+          </h1>
+          <p class="hero-subtitle">
+            Присоединяйся к движению заботливых школьников: помогай хвостатым
+            друзьям, участвуй в добрых акциях и меняй мир вокруг себя.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" data-scroll-target="#contacts">
+              Стать волонтёром
+            </button>
+            <button class="btn ghost" data-scroll-target="#about">
+              Узнать подробнее
+            </button>
+          </div>
+          <div class="hero-meta">
+            <span>🐶 забота</span>
+            <span>🐱 экология</span>
+            <span>🤝 команда</span>
+          </div>
+        </div>
+
+        <!-- Иллюстрация с животными, появляющаяся при скролле -->
+        <div class="hero-illustration reveal-on-scroll">
+          <div class="hero-animals">
+            <div class="animal-card cat">
+              <!-- Замените images/cat.jpg на путь к вашей фотографии кошки -->
+              <img src="images/cat.jpg" alt="Кошка из приюта" class="animal-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+              <span class="animal-emoji" style="display:none;">🐱</span>
+              <p class="animal-text">Кошки из приютов ждут заботы</p>
+            </div>
+            <div class="animal-card dog">
+              <!-- Замените images/dog.jpg на путь к вашей фотографии собаки -->
+              <img src="images/dog.jpg" alt="Собака из приюта" class="animal-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+              <span class="animal-emoji" style="display:none;">🐶</span>
+              <p class="animal-text">Собаки мечтают о прогулке и друге</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК С ОБЯЗАТЕЛЬНЫМ ТЕКСТОМ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Почему именно мы?</h2>
+          <p class="section-subtitle">
+            Добро, забота, молодёжь и экология — основа нашего зоо‑направления.
+          </p>
+        </div>
+
+        <!-- Текст с мягкой карточкой -->
+        <article class="about-text-card reveal-on-scroll">
+          <!-- Обязательный текст, использован дословно -->
+          <p><strong>Дорогие друзья!</strong></p>
+          <p>
+            Идёт набор в команду волонтёров зоо-направления. Мы будем
+            реализовывать проекты в сфере зооволонтёрства: помогать животным,
+            участвовать в благотворительных инициативах, поддерживать приюты и
+            развивать социально полезные зоо-проекты.
+          </p>
+          <p>
+            Если вам важно делать добро и быть частью команды, которая реально
+            помогает — будем рады вашему участию.
+          </p>
+          <p>
+            <strong>📩 Чтобы присоединиться, пишите:<br />
+              +7 708 104 2366 — Алим</strong>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- КАРТОЧКИ ДЕЯТЕЛЬНОСТИ -->
+    <section class="section activities" id="activities">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Что делает команда Ml20_volunteers?</h2>
+          <p class="section-subtitle">
+            Присоединяясь к нам, ты попадаешь в тёплое сообщество, где каждый
+            волонтёр важен.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Карточка 1 -->
+          <article class="info-card reveal-on-scroll">
+            <div class="info-icon info-icon-green">🐾</div>
+            <h3 class="info-title">Помогаем животным</h3>
+            <p class="info-text">
+              Мы становимся мостиком между одиноким хвостиком и его будущей семьей. Окружаем заботой сегодня, чтобы завтра они были готовы отправиться домой.
+            </p>
+            <!-- Животное, которое появляется при скролле -->
+            <div class="card-animal reveal-on-scroll">
+              <!-- Замените images/help-animal.jpg на путь к вашей фотографии -->
+              <img src="images/help-animal.jpg" alt="Волонтёр помогает животному" class="animal-photo-card" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+              <span class="animal-emoji large" style="display:none;"></span>
+            </div>
+          </article>
+
+          <!-- Карточка 2 -->
+          <article class="info-card reveal-on-scroll">
+            <div class="info-icon info-icon-beige">🏠</div>
+            <h3 class="info-title">Поддерживаем приюты</h3>
+            <p class="info-text">
+              Организуем сборы корма, лекарств и необходимых вещей, проводим
+              информкампании в школе и онлайн, чтобы о приютах узнали больше
+              людей.
+            </p>
+            <div class="card-animal reveal-on-scroll">
+              <!-- Замените images/shelter.jpg на путь к вашей фотографии приюта -->
+              <img src="images/shelter.jpg" alt="Приют для животных" class="animal-photo-card" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+              <span class="animal-emoji large" style="display:none;"></span>
+            </div>
+          </article>
+
+          <!-- Карточка 3 -->
+          <article class="info-card reveal-on-scroll">
+            <div class="info-icon info-icon-light">✨</div>
+            <h3 class="info-title">Делаем мир добрее</h3>
+            <p class="info-text">
+              Запускаем социальные проекты, квесты и творческие акции, где
+              добро к животным становится модным и вдохновляющим примером для
+              других.
+            </p>
+            <div class="card-animal reveal-on-scroll">
+              <!-- Замените images/kindness.jpg на путь к вашей фотографии -->
+              <img src="images/kindness.jpg" alt="Доброта к животным" class="animal-photo-card" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+              <span class="animal-emoji large" style="display:none;"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК С КОШКАМИ И СОБАКАМИ ПРИ СКРОЛЛЕ -->
+    <section class="section animals-scene" aria-label="Друзья, которым нужна помощь">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Те, ради кого мы действуем</h2>
+          <p class="section-subtitle">
+            При скролле появляются наши пушистые друзья — представь, как они
+            радуются каждому новому волонтёру.
+          </p>
+        </div>
+
+        <div class="animals-row">
+          <div class="animal-bubble reveal-on-scroll">
+            <!-- Замените images/dog-bubble1.jpg на путь к вашей фотографии -->
+            <img src="images/dog-bubble1.jpg" alt="Собака" class="animal-photo-bubble" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <span class="animal-emoji huge" style="display:none;">🐶</span>
+            <p>«Пойдёшь со мной на прогулку?»</p>
+          </div>
+          <div class="animal-bubble reveal-on-scroll">
+            <!-- Замените images/cat-bubble1.jpg на путь к вашей фотографии -->
+            <img src="images/cat-bubble1.jpg" alt="Кошка" class="animal-photo-bubble" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <span class="animal-emoji huge" style="display:none;">🐱</span>
+            <p>«А я жду того, кто погладит и заберёт домой.»</p>
+          </div>
+          <div class="animal-bubble reveal-on-scroll">
+            <!-- Замените images/animal-bubble1.jpg на путь к вашей фотографии -->
+            <img src="images/animal-bubble1.jpg" alt="Животное" class="animal-photo-bubble" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <span class="animal-emoji huge" style="display:none;">🐕‍🦺</span>
+            <p>«Каждый добрый поступок делает нас счастливее.»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts-inner">
+        <div class="contacts-content reveal-on-scroll">
+          <h2 class="section-title">Готов присоединиться к команде?</h2>
+          <p class="section-subtitle">
+            Напиши куратору проекта или передай своё желание классному
+            руководителю — дальше мы всё объясним и поможем включиться.
+          </p>
+
+          <div class="contact-card">
+            <div class="contact-main">
+              <span class="contact-label">Куратор зоо-направления</span>
+              <span class="contact-name">Алим</span>
+              <a class="contact-phone" href="tel:+77081042366">
+                +7 708 104 2366
+              </a>
+            </div>
+            <div class="contact-extra">
+              <p>
+                Напиши в мессенджер, что хочешь стать частью
+                <strong>Ml20_volunteers</strong>, и мы свяжемся с тобой.
+              </p>
+              <p class="contact-hint">
+                Можно писать после уроков — ответим, как только сможем 🐾
+              </p>
+            </div>
+          </div>
+
+          <div class="contacts-tags">
+            <span>#молодёжь</span>
+            <span>#забота</span>
+            <span>#эко</span>
+            <span>#зоо_волонтёрство</span>
+          </div>
+        </div>
+
+        <div class="contacts-side reveal-on-scroll">
+          <div class="join-badge">
+            <span class="join-title">Стать волонтёром</span>
+            <p>
+              Один школьник может мало? Вместе мы становимся мощной силой добра
+              для тех, кто не может попросить о помощи словами.
+            </p>
+            <button class="btn full-width" data-scroll-target="#top">
+              Вернуться к началу
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">
+        Ml20_volunteers · Школьный зоо-волонтёрский проект · делаем мир
+        добрее 🐾
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
